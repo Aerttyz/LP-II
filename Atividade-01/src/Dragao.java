@@ -5,16 +5,16 @@ public class Dragao extends Inimigos {
 
     @Override
     public void atacar() {
-        System.out.println("Chefão ataca");
+        System.out.println("Dragão ataca");
     }
 
     @Override
     public void mover() {
-        System.out.println("Move o chefão");
+        System.out.println("Move o dragão");
     }
 
     @Override
     public void morrer() {
-        System.out.println("Chefão morre");
-    }
+        System.out.println("dragão morre");
+    }    
 }

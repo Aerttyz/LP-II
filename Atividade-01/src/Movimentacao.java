@@ -1,6 +1,16 @@
+import java.util.Scanner;
 public class Movimentacao {
     private char direcao;
+
+
     
+    public char tecla(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Digite a direção: ");
+        direcao = scanner.next().charAt(0);
+        scanner.close();
+        return direcao;
+    }
     
     public void mover() {
         if(direcao == 'w'){

@@ -1,3 +1,5 @@
+import java.sql.Time;
+
 public class Mario {
     private int vidas;
     private int moedas;
@@ -44,7 +46,32 @@ public class Mario {
     
     public void mover(char direcao) {   
         Movimentacao mov = new Movimentacao();
-        mov.mover(direcao);
+        mov.tecla();
+        mov.mover();
     }
 
+    public void morrer(){
+        if(vidas == 0){
+            System.out.println("Game Over");
+        } 
+    }
+
+    public void comerCogumelo(){
+        this.cogumelo = true;
+        Time tempo = new Time(100);
+        if(tempo.getTime() == 0){
+            this.cogumelo = false;
+        }
+    }
+
+    public void comerEstrela(){
+        this.estrela = true;
+        Time tempo = new Time(100);
+        if(tempo.getTime() == 0){
+            this.estrela = false;
+        }
+    }
+    public void pegarMoeda(){
+        this.moedas++;
+    }
 }

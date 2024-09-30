@@ -17,4 +17,8 @@ public class SuperBomba extends Inimigos {
     public void morrer() {
         System.out.println("SuperBomba Não morre");
     }
+
+    public void explodir() {
+        System.out.println("SuperBomba explode");
+    }
 }
