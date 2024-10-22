@@ -2,6 +2,7 @@ public class App {
     public static void main(String[] args) throws Exception {
         Exercicios exercicios = new Exercicios();
         ExerciciosDois exerciciosDois = new ExerciciosDois();
+        Pessoa pessoa = new Pessoa();
        // exercicios.triangulo();
 /*         exercicios.fibonacci();
  */        /* exercicios.exemplo3();
@@ -15,6 +16,8 @@ public class App {
         //exerciciosDois.exemplo2();
         //exerciciosDois.exemplo3();
         //exerciciosDois.exemplo4();
-        exerciciosDois.desafio();
+        //exerciciosDois.desafio();
+        pessoa.printPessoa();
+        System.out.println(pessoa.nome + pessoa.idade);
         }
 }
